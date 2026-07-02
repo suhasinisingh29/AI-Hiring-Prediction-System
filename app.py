@@ -64,7 +64,7 @@ st.markdown("""
     background-color: #f7f9fc;
 }
 
-h1,h2,h3{
+h1, h2, h3{
     color:#1f77b4;
 }
 
@@ -75,6 +75,12 @@ div[data-testid="stMetric"]{
     box-shadow:0px 3px 10px rgba(0,0,0,0.1);
 }
 
+/* Force metric text to stay black */
+div[data-testid="stMetric"] *{
+    color:#000000 !important;
+}
+
+/* Button */
 div.stButton > button{
     background:#1f77b4;
     color:white;
